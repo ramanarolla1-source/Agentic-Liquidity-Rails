@@ -13,9 +13,9 @@ ALR is built as a specialized DeFi extension of the **Horizon Sovereign Stack (H
 
 ## **Core Features**
 * **🚀 Autonomous Agentic Launch:** Utilizing Four.meme’s "Agentic Mode" to deploy sovereign utility tokens with automated bonding curve management.
-* **🧠 Verifiable Intelligence:** All trading and hedging decisions are routed through the DGrid AI Gateway, ensuring that AI inference is cryptographically verified.
-* **🛡️ Permissionless Perp Hedging:** Real-time risk mitigation via MYX V2. Agents autonomously open short positions to hedge treasury value.
-* **🆔 Hardware-Anchored Identity:** Execution is bound to secure, hardware-vetted credentials, preventing bot-farm manipulation.
+* **🧠 Verifiable Intelligence:** All trading and hedging decisions are routed through the DGrid AI Gateway, ensuring that AI inference is cryptographically verified and untampered.
+* **🛡️ Permissionless Perp Hedging:** Real-time risk mitigation via MYX V2. Agents autonomously open short positions to hedge treasury value during high volatility.
+* **🆔 Hardware-Anchored Identity:** Execution is bound to secure, hardware-vetted credentials, preventing bot-farm manipulation and ensuring "Sovereign" accountability.
 
 ## **System Architecture**
 
@@ -38,7 +38,7 @@ Quick Start
 Prerequisites
 Node.js 20+
 
-BNB Chain Mainnet Account
+BNB Chain Mainnet Account (with small XLM/BNB for gas)
 
 Installation
 git clone [https://github.com/ramanarolla1-source/Agentic-Liquidity-Rails.git](https://github.com/ramanarolla1-source/Agentic-Liquidity-Rails.git)
@@ -46,10 +46,13 @@ cd Agentic-Liquidity-Rails
 npm install
 
 Configure Environment
-Create a .env file
+Create a .env file:
 DGRID_API_KEY=your_dgrid_key
 MYX_V2_PRIVATE_KEY=your_wallet_key
 FOUR_MEME_PROXY=0x5c952063c7fc8610FFDB798152D69F0B9550762b
+
+Run Agentic Launcher
+node scripts/launchHSS.js
 
 Roadmap & BUIDL Status
 Phase 1: Agentic Mode Token Launch (Four.meme) — [COMPLETED]
