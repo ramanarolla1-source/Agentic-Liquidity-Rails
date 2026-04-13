@@ -17,6 +17,24 @@ ALR is the high-frequency DeFi execution arm of the **Horizon Sovereign Stack (H
 🆔 Hardware-Anchored Identity: Execution is bound to secure, hardware-vetted credentials, preventing bot-farm manipulation and ensuring "Sovereign" accountability.
 
 System Architecture
+
+### **System Architecture**
+
+```mermaid
+graph TD
+    A[DGrid AI Gateway] -->|Verifiable Inference| B[ALR Logic Engine]
+    B -->|Launch Token| C[Four.meme Bonding Curve]
+    B -->|Hedge Risk| D[MYX V2 Perp Engine]
+    E[National Trust Identity] --- B
+
+Inference Layer: DGrid Gateway fetches multi-model consensus on market risk.
+
+Logic Layer (ALR): Evaluates liquidity depth on Four.meme bonding curves.
+
+Execution Layer: - Normal Ops: Maintains "Sovereign" liquidity rails.
+
+Risk Event: Triggers a MYX V2 Perp Hedge (Short) to protect the $20,000 TVL threshold.
+
 Inference Layer: DGrid Gateway fetches multi-model consensus on market risk.
 
 Logic Layer (ALR): Evaluates liquidity depth on Four.meme bonding curves.
