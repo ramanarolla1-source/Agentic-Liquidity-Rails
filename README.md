@@ -5,20 +5,19 @@
 [![AI-Gateway](https://img.shields.io/badge/AI--Gateway-DGrid-green)](https://dgrid.io)
 
 > **Verifiable, Autonomous Liquidity Infrastructure for the Sovereign Agent Economy.**
-> Shared Context
-> ### **Ecosystem Context**
-ALR is the high-frequency DeFi execution arm of the **Horizon Sovereign Stack (HSS)**. While HSS manages the long-term "National Trust" identity and settlement, ALR provides the "Agile Rails" for agents to interact with fast-moving liquidity markets like **Four.meme** and **MYX V2**.
 
+## **Overview**
+**Agentic-Liquidity-Rails (ALR)** is a decentralized execution layer designed for AI agents to autonomously launch tokens, manage liquidity, and hedge market risk without human intervention. By integrating **DGrid’s Proof of Quality (PoQ)** for verifiable inference and **MYX V2’s Permissionless Engine** for perpetual hedging, ALR provides a "National Trust" alternative to centralized, black-box trading bots.
 
-🧠 Verifiable Intelligence: All trading and hedging decisions are routed through the DGrid AI Gateway, ensuring that AI inference is cryptographically verified and untampered.
+ALR is built as a specialized DeFi extension of the **Horizon Sovereign Stack (HSS)**.
 
-🛡️ Permissionless Perp Hedging: Real-time risk mitigation via MYX V2. Agents autonomously open short positions to hedge treasury value during high volatility.
+## **Core Features**
+* **🚀 Autonomous Agentic Launch:** Utilizing Four.meme’s "Agentic Mode" to deploy sovereign utility tokens with automated bonding curve management.
+* **🧠 Verifiable Intelligence:** All trading and hedging decisions are routed through the DGrid AI Gateway, ensuring that AI inference is cryptographically verified.
+* **🛡️ Permissionless Perp Hedging:** Real-time risk mitigation via MYX V2. Agents autonomously open short positions to hedge treasury value.
+* **🆔 Hardware-Anchored Identity:** Execution is bound to secure, hardware-vetted credentials, preventing bot-farm manipulation.
 
-🆔 Hardware-Anchored Identity: Execution is bound to secure, hardware-vetted credentials, preventing bot-farm manipulation and ensuring "Sovereign" accountability.
-
-System Architecture
-
-### **System Architecture**
+## **System Architecture**
 
 ```mermaid
 graph TD
@@ -26,14 +25,6 @@ graph TD
     B -->|Launch Token| C[Four.meme Bonding Curve]
     B -->|Hedge Risk| D[MYX V2 Perp Engine]
     E[National Trust Identity] --- B
-
-Inference Layer: DGrid Gateway fetches multi-model consensus on market risk.
-
-Logic Layer (ALR): Evaluates liquidity depth on Four.meme bonding curves.
-
-Execution Layer: - Normal Ops: Maintains "Sovereign" liquidity rails.
-
-Risk Event: Triggers a MYX V2 Perp Hedge (Short) to protect the $20,000 TVL threshold.
 
 Inference Layer: DGrid Gateway fetches multi-model consensus on market risk.
 
@@ -47,22 +38,18 @@ Quick Start
 Prerequisites
 Node.js 20+
 
-BNB Chain Mainnet Account (with small XLM/BNB for gas)
+BNB Chain Mainnet Account
 
 Installation
-git clone https://github.com/ramanarolla1-source/Agentic-Liquidity-Rails.git
+git clone [https://github.com/ramanarolla1-source/Agentic-Liquidity-Rails.git](https://github.com/ramanarolla1-source/Agentic-Liquidity-Rails.git)
 cd Agentic-Liquidity-Rails
 npm install
 
 Configure Environment
-Create a .env file:
-
+Create a .env file
 DGRID_API_KEY=your_dgrid_key
 MYX_V2_PRIVATE_KEY=your_wallet_key
 FOUR_MEME_PROXY=0x5c952063c7fc8610FFDB798152D69F0B9550762b
-
-Run Agentic Launcher
-node scripts/launchHSS.js
 
 Roadmap & BUIDL Status
 Phase 1: Agentic Mode Token Launch (Four.meme) — [COMPLETED]
@@ -76,10 +63,3 @@ Distributed under the Apache License 2.0. See LICENSE for more information.
 
 Strategic Note for Judges
 ALR solves the "Trust Overhead" in autonomous finance. By anchoring AI decisions in DGrid and risk management in MYX, we move from "Meme-bots" to Sovereign Agentic Infrastructure.
-
-System Diagram
-graph TD
-    A[DGrid AI Gateway] -->|Verifiable Inference| B[ALR Logic Engine]
-    B -->|Launch Token| C[Four.meme Bonding Curve]
-    B -->|Hedge Risk| D[MYX V2 Perp Engine]
-    E[National Trust Identity] --- B
