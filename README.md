@@ -25,7 +25,6 @@ graph TD
     B -->|Launch Token| C[Four.meme Bonding Curve]
     B -->|Hedge Risk| D[MYX V2 Perp Engine]
     E[National Trust Identity] --- B
-
 Inference Layer: DGrid Gateway fetches multi-model consensus on market risk.
 
 Logic Layer (ALR): Evaluates liquidity depth on Four.meme bonding curves.
@@ -44,16 +43,13 @@ Installation
 git clone [https://github.com/ramanarolla1-source/Agentic-Liquidity-Rails.git](https://github.com/ramanarolla1-source/Agentic-Liquidity-Rails.git)
 cd Agentic-Liquidity-Rails
 npm install
-
 Configure Environment
 Create a .env file:
 DGRID_API_KEY=your_dgrid_key
 MYX_V2_PRIVATE_KEY=your_wallet_key
 FOUR_MEME_PROXY=0x5c952063c7fc8610FFDB798152D69F0B9550762b
-
 Run Agentic Launcher
 node scripts/launchHSS.js
-
 Roadmap & BUIDL Status
 Phase 1: Agentic Mode Token Launch (Four.meme) — [COMPLETED]
 
